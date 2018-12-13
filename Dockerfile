@@ -5,6 +5,6 @@ RUN npm install -g npm-proxy-cache
 
 VOLUME /cache
 
-EXPOSE 8080
+EXPOSE 9876
 
 CMD ["npm-proxy-cache", "-h", "0.0.0.0", "-s", "/cache", "-t", "2592000", "-p", "9876"]
